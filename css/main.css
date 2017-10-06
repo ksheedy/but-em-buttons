@@ -7,7 +7,7 @@ html {
 header {
   position: absolute;
   top: 275px;
-  text-shadow: 1px 2px 3px rgba(255, 255, 255, .7);
+  text-shadow: 1px 2px 3px #90ccc3;
 }
 
 .btn {
@@ -18,3 +18,5 @@ header {
 hr {
   border-color: #b4fff4;
 }
+
+.btn:hover {}
