@@ -10,13 +10,52 @@ header {
   text-shadow: 1px 2px 3px #90ccc3;
 }
 
-.btn {
+.btn-ghost {
   color: #b4fff4;
   border: solid 3px #b4fff4;
+  border-radius: 6px;
+  position: relative;
+  background-color: transparent;
+  padding: 0;
+  width: 200px;
+  transition: all 1000ms linear;
 }
 
-hr {
+.bar {
+  height: 20px;
+  width: 200px;
+  border: solid 3px #b4fff4;
+  border-radius: 6px;
+}
+
+.btn:active,
+.btn:focus {
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+
+}
+
+.btn:active .bar,
+.btn:focus .bar {
+  height: 10px;
+}
+
+.btn .icon {
+  position: absolute;
+  top: 7px;
+  left: 135px;
+}
+
+.btn:hover .icon {
+  position: absolute;
+  top: 2px;
+  left: 135px;
+}
+
+.btn:hover {
   border-color: #b4fff4;
+  background-color: #90ccc3;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, .7), rgba(180, 255, 244, .2));
 }
-
-.btn:hover {}
